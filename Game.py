@@ -23,6 +23,7 @@ def ball_movement():
             score = 1  # Increase player score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 3: Increase the ball's speed by x
+            # TODO Task 6: Add sound effects
 
     # Ball collision with top boundary
     if ball.top <= 0:
@@ -75,6 +76,7 @@ bg_color = pygame.Color('grey12')
 
 # Game Rectangles (ball and player paddle)
 ball = pygame.Rect(screen_width / 2 - 15, screen_height / 2 - 15, 30, 30)  # Ball (centered)
+# TODO Task 1 Make the paddle bigger
 player = pygame.Rect(screen_width/2 - 45, screen_height - 20, 100, 15)  # Player paddle
 
 # Game Variables
@@ -117,7 +119,7 @@ while True:
     # Visuals
     screen.fill(bg_color)  # Clear screen with background color
     pygame.draw.rect(screen, light_grey, player)  # Draw player paddle
-    # TODO Task 1: Change color of the ball
+    # TODO Task 5: Change color of the ball
     pygame.draw.ellipse(screen, light_grey, ball)  # Draw ball
     player_text = basic_font.render(f'{score}', False, light_grey)  # Render player score
     screen.blit(player_text, (screen_width/2 - 15, 10))  # Display score on screen
