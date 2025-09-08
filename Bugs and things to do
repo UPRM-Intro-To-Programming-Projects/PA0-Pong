@@ -1,0 +1,16 @@
+Things to fix:
+
+  -The spacebar continues hitting the ball.
+  -The ball clips onto the paddle.
+  -You can get infinite points if the paddle is all the way on the left or the right every 30 points.
+  -No Game Over Screen
+  -Crashed when inputting the name.
+  -SFX
+    -sound.effect = pygame.mixer.Sound() # Wav, Ogg, Mp3
+    -sound.effect.play() # plays once
+  -Music
+    -pygame.mixer.music.load()
+    -pygame.mixer.music.play(-1) # plays indefinetely (-1 for loops)
+    -pygame.mixer.muisc.stop()
+  -Doesn't increase number after 1
+    -score = int(score) + 1
